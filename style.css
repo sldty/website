@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Eczar:wght@700&display=swap');
+
+.content {
+    max-width: 500px;
+    padding: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:root {
+    --half-fill: #ffffffbb;
+    --bg-fill:   #000;
+    --text-fill: #eee;
+    --soft-fill: #ffffff33;
+
+    --font-base: 15pt;
+    --font-heading: 10pt;
+    --font-body: "Atkinson Hyperlegible", sans-serif;
+    --font-title: "Eczar", serif;
+    --font-mono: monospace;
+    
+    --snappy: 0.25s ease-in-out;
+}
+
+body {
+    width: 100vw;
+    background-color: var(--bg-fill);
+    background: linear-gradient(135deg, #2179c6 0%, #000851 100%);
+    color: var(--text-fill);
+    font-family: var(--font-body);
+    font-size: var(--font-base);
+    line-height: 1.5;
+}
+
+p {
+    font-size: var(--font-base);
+    hyphens: auto;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+    font-family: var(--font-title);
+    font-weight: bold;
+}
+
+.title {
+    font-size: calc(var(--font-base) + 2 * var(--font-heading));
+}
+
+h1 { font-size: calc(var(--font-base) + var(--font-heading) / 2); }
+h2 { font-size: calc(var(--font-base) + var(--font-heading) / 3); }
+h3 { font-size: calc(var(--font-base) + var(--font-heading) / 4); }
+h4 { font-size: calc(var(--font-base) + var(--font-heading) / 5); }
+h5 { font-size: calc(var(--font-base) + var(--font-heading) / 6); }
+h6 { font-size: calc(var(--font-base) + var(--font-heading) / 7); }
+
+pre {
+    font-family: var(--font-mono), monospace;
+    overflow: scroll;
+    padding: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 3px;
+}
+
+code {
+    font-family: var(--font-mono), monospace;
+    background-color: var(--soft-fill);
+    overflow: scroll;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+    hyphens: none;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 0.93em;
+}
+
+pre code {
+    white-space: pre;
+    background: none;
+    padding: 0;
+    border: none;
+    border-radius: none;
+}
+
+blockquote {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-left: 2vh;
+    border-left: 3px solid var(--soft-fill);
+}
+
+ol, ul {
+    padding-left: 4vh;
+}
+
+ul {
+    list-style: disc outside none;
+}
+
+ol {
+    list-style: decimal outside none;
+}
+
+li {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+hr {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: 0 solid var(--soft-fill);
+    border-top: 3px solid var(--soft-fill);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 3px solid var(--soft-fill);
+}
+
+a:hover {
+    border-bottom: 3px solid var(--text-fill);
+    background-size: 100% 100%;
+}
+
+em, i {
+    font-style: italic;
+}
+
+strong, b {
+    font-weight: bolder;
+}
+
+img {
+    display: block;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
